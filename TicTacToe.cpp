@@ -53,6 +53,7 @@ public:
     void boardUpdate(char moveFor, int i,int j)
     {
         board[i][j] = moveFor;
+        blocksFilled++;
         boardPrint();
     }
 
