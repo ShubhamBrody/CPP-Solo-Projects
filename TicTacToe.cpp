@@ -1,4 +1,4 @@
-//This code is the implementation of MINMAX algorithm to create an AI which plays Tic-Tac-Toe in the optimal way.
+//This code is the implementation of MINIMAX algorithm to create an AI which plays Tic-Tac-Toe in the optimal way.
 
 #include<iostream>
 #include<time.h>
