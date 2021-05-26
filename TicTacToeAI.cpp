@@ -1,4 +1,4 @@
-//This code is the implementation of MINIMAX algorithm to create an AI which plays Tic-Tac-Toe in the optimal way.
+//This code is the implementation of MINMAX algorithm to create an AI which plays Tic-Tac-Toe in the optimal way.
 
 #include<iostream>
 #include<time.h>
@@ -60,12 +60,12 @@ public:
     void boardPrint()
     {
         system("cls");
-        cout << "***********Top left corner is 0,0 and bottom left is 2,2. choose accordingly.***********" << "\n\n\n";
+        cout << "***********Input coordinates based on the given reference board alongside the game board***********" << "\n\n\n";
         for(int i = 0; i < 3; i++)
         {
-            cout << "                    " <<board[i][0] << " | "<< board[i][1] << " | " << board[i][2] << endl;
+            cout << "                    " <<board[i][0] << " | "<< board[i][1] << " | " << board[i][2] << "                     (" << i << ",0) | (" << i << ",1) | (" << i << ",2)" << endl;
             if(i<2)
-            cout << "                   ---+---+---" << endl;
+            cout << "                   ---+---+---" << "                    ------+------+------" <<endl;
         }
     }
 
@@ -200,7 +200,7 @@ int main()
     TicTacToe t;
     bool gameStart = true;
     t.boardPrint();
-    int m = 1;
+    int m = 0;
     while(gameStart)
     {
         bool anyoneWin = false;
