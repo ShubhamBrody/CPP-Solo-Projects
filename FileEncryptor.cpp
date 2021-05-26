@@ -8,6 +8,7 @@
 
 #define PROCESS Byte + 666 * c - 342 * c
 
+
 using namespace std;
 
 int loadernum = 1, loadfin = 0;
@@ -428,7 +429,7 @@ void worker(string f, int c)
 	char req;
 
 	endTime = time(NULL);
-	cout << "Do you want to delete the file processed (the one provided by the user as input)?(Y/N)" << endl;
+	cout << "Do you want to delete the file processed?(Y/N)" << endl;
 	cout << "Option : ";
 	cin >> req;
 	if(req == 'Y' || req == 'y')
@@ -463,10 +464,10 @@ inline string inputter()
 
 void fullscreen()
 {
-    keybd_event(VK_MENU,0x38,0,0);
-    keybd_event(VK_RETURN,0x1c,0,0);
-    keybd_event(VK_RETURN,0x1c,KEYEVENTF_KEYUP,0);
-    keybd_event(VK_MENU,0x38,KEYEVENTF_KEYUP,0);
+keybd_event(VK_MENU,0x38,0,0);
+keybd_event(VK_RETURN,0x1c,0,0);
+keybd_event(VK_RETURN,0x1c,KEYEVENTF_KEYUP,0);
+keybd_event(VK_MENU,0x38,KEYEVENTF_KEYUP,0);
 }
 
 int main()
